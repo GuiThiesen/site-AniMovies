@@ -1,3 +1,5 @@
+$( document ).ready(function() {
+
 //Scroll Suave
 let navBtn = $('.nav-item');
 
@@ -31,4 +33,42 @@ $(navBtn).click(function() {
   $([document.documentElement, document.body]).animate({
       scrollTop: $(scrollTo).offset().top - 70
   }, 1500);
+});
+
+
+// Filtro do catálogo
+
+$('.filter-btn').on('click', function() {
+
+  let type = $(this).attr('id');
+  let boxes = $('.project-box');
+
+  $('.main-btn').removeClass('active');
+  $(this).addClass('active');
+
+  if(type == 'anime-btn') {
+    eachBoxes('anime', boxes);
+  } else if(type == 'movie-btn') {
+    eachBoxes('movie', boxes);
+  } else {
+    eachBoxes('all', boxes);
+  }
+
+});
+
+function eachBoxes(type, boxes) {
+
+  if(type == 'all') {
+    $(boxes).fadeIn();
+  } else {
+    $(boxes).each(function() {
+      if(!$(this).hasClass(type)) {
+        $(this).fadeOut('slow');
+      } else {
+        $(this).fadeIn();
+      }
+    });
+  }
+}
+
 });
