@@ -1,197 +1,199 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap");
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins',sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
-.navbar{
-	position: fixed;
-	top: 0;
-	z-index: 99999;
-	padding:8px 0;
-	background: rgba(0, 0, 0, 0.76);
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    padding: 8px 0;
+    background: rgba(0, 0, 0, 0.76);
     backdrop-filter: blur(15px);
-    box-shadow: 1px 4px 6px 0 rgba(0,0,0,.2);
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
-.navbar .logo{
-	height: 60px;
-	padding-right: 15px;
-	padding-left: 5px;
+.navbar .logo {
+    height: 60px;
+    padding-right: 15px;
+    padding-left: 5px;
 }
-.navbar ul.nav{
-	margin-right: 15%;
+.navbar ul.nav {
+    margin-right: 15%;
 }
 .navbar ul.nav li.active,
-.navbar ul.nav li:hover{
-	background:rgba(221, 84, 84, 0.5);
-	color: #000;
-
+.navbar ul.nav li:hover {
+    background: rgba(221, 84, 84, 0.5);
+    color: #000;
 }
-.navbar ul.nav a{
-	color: #fff;
-	font-size: 1em;
-	font-weight: 500;
+.navbar ul.nav a {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
 }
 .navbar ul.nav li.active a,
-.navbar ul.nav li:hover a{
-	color: #000;
+.navbar ul.nav li:hover a {
+    color: #000;
 }
 
 /*Slider*/
-#carouselExampleIndicators{
-	position: relative;
-	height: 100vh;
-	width: 100%;
+#carouselExampleIndicators {
+    position: relative;
+    height: 100vh;
+    width: 100%;
 }
-#carouselExampleIndicators .carousel-inner{
-	position: relative;
-	height: 100%;
-	width: 100%;
-	background: #000;
+#carouselExampleIndicators .carousel-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #000;
 }
-#carouselExampleIndicators .carousel-inner:before{
-	position: absolute;
-	content: '';
-	background: rgba(0, 0, 0, 0.45);
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 1;
+#carouselExampleIndicators .carousel-inner:before {
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.45);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item{
-	position: relative;
-	height: 100%;
-	width:100%;
-	background: url('/img/movie3.jpg');
-	background-size: 100% 100%;
-	background-position: center;
-	background-attachment: fixed;
+#carouselExampleIndicators .carousel-inner .carousel-item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url("img/movie3.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
-	background: url('img/anime3.jpg');
-	background-size: 100% 100%;
-	background-position: center;
-	background-attachment: fixed;
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2) {
+    background: url("img/anime5.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
-	background: url('img/movie5.jpg');
-	background-size: 100% 100%;
-	background-position: center;
-	background-attachment: fixed;
-}
-
-#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(4){
-	background: url('img/anime1.jpg');
-	background-size: 100% 100%;
-	background-position: center;
-	background-attachment: fixed;
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3) {
+    background: url("img/movie5.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-#carouselExampleIndicators .carousel-inner .carousel-item .info{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	height: auto;
-	width: 100%;
-	z-index: 1;
-	text-align: center;
-}
-#carouselExampleIndicators .carousel-inner .carousel-item h1{
-	height: auto;
-	color: #fff;
-	width: 100%;
-	z-index: 1;
-	text-align: center;
-	font-size: 5.5em;
-	font-weight: 750;
-}
-#carouselExampleIndicators .carousel-inner .carousel-item p{
-	height: auto;
-	color: #ccc;
-	width: 100%;
-	z-index: 1;
-	text-align: center;
-	font-size: 1.2em;
-	font-weight: 500;
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(4) {
+    background: url("img/anime1.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.rating{
+#carouselExampleIndicators .carousel-inner .carousel-item .info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item h1 {
+    height: auto;
+    color: #fff;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    font-size: 5.5em;
+    font-weight: 750;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item p {
+    height: auto;
+    color: #ccc;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.rating {
     color: white;
+    margin-top: 10px;
 }
 
 /* Sobre a empresa */
 
 #about-area {
-    background-color: #F9F9F9;
-  }
-  
-  .main-title {
+    background-color: #f9f9f9;
+}
+
+.main-title {
     color: #444;
     margin: 100px 0 50px 0;
     font-size: 50px;
     text-align: center;
-  }
-  
-  .main-title::after {
+}
+
+.main-title::after {
     content: "";
     border-top: 2px solid #333;
     width: 15%;
     position: absolute;
     top: 60px;
     left: 42.5%;
-  }
-  
-  .about-title {
+}
+
+.about-title {
     font-size: 17px;
     color: #444;
     text-transform: uppercase;
     font-weight: bold;
-  }
-  
-  #about-list {
+}
+
+#about-list {
     list-style: none;
     padding-left: 0;
-  }
-  
-  #about-list li {
+}
+
+#about-list li {
     line-height: 30px;
-  }
-  
-  #about-list i {
+}
+
+#about-list i {
     color: red;
     margin-right: 15px;
-  }
-  
-  /* Planos */
-  
-  .service-box {
+}
+
+/* Planos */
+
+.service-box {
     text-align: center;
     margin-bottom: 50px;
-  }
-  
-  .service-box i, .service-box h4 {
-    transition: .5s;
-  }
-  
-  .service-box i {
+}
+
+.service-box i,
+.service-box h4 {
+    transition: 0.5s;
+}
+
+.service-box i {
     font-size: 36px;
     margin-bottom: 20px;
     color: #444;
-  }
-  
-  .service-box h4 {
+}
+
+.service-box h4 {
     font-size: 24px;
     margin-bottom: 20px;
-  }
-  
-  .service-box:hover > i, .service-box:hover > h4 {
+}
+
+.service-box:hover > i,
+.service-box:hover > h4 {
     color: red;
-  }
-  
-  /* Dados 
+}
+
+/* Dados 
   
   .circle-box div {
     padding: 0 40px;
@@ -208,10 +210,9 @@
     font-size: 26px;
     margin-top: 20px;
   } */
-  
-  /* Catálogo */
-  
-  .card-body {
+
+/* Catálogo */
+
+.card-body {
     text-align: center;
-  }
-  
+}

@@ -1,206 +1,325 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>AniMovies</title>
+        <!--Favicon-->
+        <link rel="shortcut icon" type="image/png" href="favicon.png" />
+        <!--Bootstrap-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        />
+        <!--Font-Awesome-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <!--Font Awesome-->
+        <script
+            src="https://kit.fontawesome.com/fb76bd2a7b.js"
+            crossorigin="anonymous"
+        ></script>
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <!--JQuery-->
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-3.4.1.js"
+        ></script>
+    </head>
 
-<head>
-    <meta charset="utf-8" />
-    <title>AniMovies</title>
-    <!--Favicon-->
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
-    <!--Bootstrap-->
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-    <!--Font-Awesome-->
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/fb76bd2a7b.js" crossorigin="anonymous"></script>
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!--JQuery-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
-</head>
-
-<body>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 navbar">
-                <a href="index.html" class="logo navbar-brand text-white offset-md-2"><img src="img/animovies.png"
-                        class="img-responsive logo"></a>
-                <ul class="nav">
-                    <a class="nav-item nav-link" id="home-menu" href="#">Home</a>
-                    <a class="nav-item nav-link" id="about-menu" href="#">Sobre</a>
-                    <a class="nav-item nav-link" id="services-menu" href="#">Planos</a>
-                    <a class="nav-item nav-link" id="catalog-menu" href="#">Catálogo</a>
-                </ul>
-            </div>
-
-            <!--Slides-->
-
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="info">
-                            <!--Slide 1-->
-                            <h1>Interstellar</h1>
-                            <img src="img/star.png" alt="estrela" height="50px">
-                            <h2 class="rating">8.6/10</h2>
-                            <p>O melhor filme sobre viagens espaciais!</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="info">
-                            <!--Slide 2-->
-                            <h1>Death Note</h1>
-                            <img src="img/star.png" alt="estrela" height="50px">
-                            <h2 class="rating">9.0/10</h2>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="info">
-                            <!--Slide 3-->
-                            <h1>O Mandaloriano</h1>
-                            <img src="img/star.png" alt="estrela" height="50px">
-                            <h2 class="rating">8.8/10</h2>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="info">
-                            <!--Slide 4-->
-                            <h1>Atack on Titan</h1>
-                            <img src="img/star.png" alt="estrela" height="50px">
-                            <h2 class="rating">9.0/10</h2>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--Sobre a empresa-->
-    <div id="about-area">
-        <div class="container">
+    <body>
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
-                    <h3 class="main-title">Sobre a AniMovies</h3>
-                </div>
-                <div class="col-md-6">
-                    <img class="img-fluid" src="img/goku.png" alt="Goku-Sobre" width="350px">
-                </div>
-                <div class="col-md-6">
-                    <h3 class="about-title">Plataforma de streaming dedicada a Filmes e Animes!</h3>
-                    <p>Últimos lançamentos de filmes e episódios sempre em primeira mão!</p>
-                    <p>Servidores no brasil para uma melhor conexão.</p>
-                    <p>Nosso time está disponível 24h para atender qualquer problema!</p>
-                    <p>Veja as vantagens ao assinar a AniMovies:</p>
-                    <ul id="about-list">
-                        <li><i class="fas fa-check"></i> Catálogo em altíssima resolução com suporte a HDR</li>
-                        <li><i class="fas fa-check"></i> Offline Viewing</li>
-                        <li><i class="fas fa-check"></i> Novos episódios logo após a exibição no Japão.</li>
-                        <li><i class="fas fa-check"></i> Sem anúncios</li>
-                        <li><i class="fas fa-check"></i> Melhor valor do mercado</li>
+                <div class="col-md-12 navbar">
+                    <a
+                        href="index.html"
+                        class="logo navbar-brand text-white offset-md-2"
+                        ><img
+                            src="img/animovies.png"
+                            class="img-responsive logo"
+                    /></a>
+                    <ul class="nav">
+                        <a class="nav-item nav-link" id="home-menu" href="#"
+                            >Home</a
+                        >
+                        <a class="nav-item nav-link" id="about-menu" href="#"
+                            >Sobre</a
+                        >
+                        <a class="nav-item nav-link" id="services-menu" href="#"
+                            >Planos</a
+                        >
+                        <a class="nav-item nav-link" id="catalog-menu" href="#"
+                            >Catálogo</a
+                        >
                     </ul>
                 </div>
+
+                <!--Slides-->
+
+                <div
+                    id="carouselExampleIndicators"
+                    class="carousel slide"
+                    data-ride="carousel"
+                    data-interval="5000"
+                >
+                    <ol class="carousel-indicators">
+                        <li
+                            data-target="#carouselExampleIndicators"
+                            data-slide-to="0"
+                            class="active"
+                        ></li>
+                        <li
+                            data-target="#carouselExampleIndicators"
+                            data-slide-to="1"
+                        ></li>
+                        <li
+                            data-target="#carouselExampleIndicators"
+                            data-slide-to="2"
+                        ></li>
+                        <li
+                            data-target="#carouselExampleIndicators"
+                            data-slide-to="3"
+                        ></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="info">
+                                <!--Slide 1-->
+                                <h1>Interstellar</h1>
+                                <img
+                                    src="img/star.png"
+                                    alt="estrela"
+                                    height="50px"
+                                />
+                                <h2 class="rating">8.6/10</h2>
+                                <p>O melhor filme sobre viagens espaciais!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="info">
+                                <!--Slide 2-->
+                                <h1>Fullmetal Alchemist: Brotherhood</h1>
+                                <a
+                                    href="https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood?q=fullmeta&cat=anime"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="img/star.png"
+                                        alt="estrela"
+                                        height="50px"
+                                    />
+                                </a>
+                                <h2 class="rating">9.15/10</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="info">
+                                <!--Slide 3-->
+                                <h1>O Mandaloriano</h1>
+                                <img
+                                    src="img/star.png"
+                                    alt="estrela"
+                                    height="50px"
+                                />
+                                <h2 class="rating">8.8/10</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="info">
+                                <!--Slide 4-->
+                                <h1>Attack on Titan</h1>
+                                <img
+                                    src="img/star.png"
+                                    alt="estrela"
+                                    height="50px"
+                                />
+                                <h2 class="rating">8.52/10</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <a
+                        class="carousel-control-prev"
+                        href="#carouselExampleIndicators"
+                        role="button"
+                        data-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a
+                        class="carousel-control-next"
+                        href="#carouselExampleIndicators"
+                        role="button"
+                        data-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <!--Planos-->
-    <div id="services-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="main-title">Planos</h3>
-                </div>
-                <div class="col-md-4 service-box">
-                    <i class="fa-regular fa-chess-queen"></i>
-                    <h4>Semanal</h4>
-                    <p>FAN</p>
-                    <h2>R$9,90</h2>
-                </div>
-                <div class="col-md-4 service-box">
-                    <i class="fa-regular fa-chess-queen"></i>
-                    <h4>Mensal</h4>
-                    <p>MEGA FAN</p>
-                    <h2>R$24,90</h2>
-                </div>
-                <div class="col-md-4 service-box">
-                    <i class="fa-solid fa-chess-queen"></i>
-                    <h4>Anual</h4>
-                    <p>ULTRA FAN</p>
-                    <h2>R$240,90</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Dados-->
-    <!-- Catálogo -->
-    <div id="catalog-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="main-title">Nosso Catálogo</h3>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="img/capa.jpg" class="card-img-top" alt="Imagem de Perfil 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Attack on Titan</h5>
-                            <p class="card-text">Anime</p>
-                        </div>
+        <!--Sobre a empresa-->
+        <div id="about-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title">Sobre a AniMovies</h3>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="img/capa2.jpg" class="card-img-top" alt="Imagem de Perfil 2">
-                        <div class="card-body">
-                            <h5 class="card-title">The Seven Deadly Sins</h5>
-                            <p class="card-text">Anime</p>
-                        </div>
+                    <div class="col-md-6">
+                        <img
+                            class="img-fluid"
+                            src="img/goku.png"
+                            alt="Goku-Sobre"
+                            width="350px"
+                        />
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="img/capa3.jpg" class="card-img-top" alt="Imagem de Perfil 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Sete Vidas</h5>
-                            <p class="card-text">Will Smith</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="img/capa4.jpg" class="card-img-top" alt="Imagem de Perfil 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Marley e Eu</h5>
-                            <p class="card-text">Owen Wilson</p>
-                        </div>
+                    <div class="col-md-6">
+                        <h3 class="about-title">
+                            Plataforma de streaming dedicada a Filmes e Animes!
+                        </h3>
+                        <p>
+                            Últimos lançamentos de filmes e episódios sempre em
+                            primeira mão!
+                        </p>
+                        <p>Servidores no brasil para uma melhor conexão.</p>
+                        <p>
+                            Nosso time está disponível 24h para atender qualquer
+                            problema!
+                        </p>
+                        <p>Veja as vantagens ao assinar a AniMovies:</p>
+                        <ul id="about-list">
+                            <li>
+                                <i class="fas fa-check"></i> Catálogo em
+                                altíssima resolução com suporte a HDR
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> Offline Viewing
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> Novos episódios
+                                logo após a exibição no Japão.
+                            </li>
+                            <li><i class="fas fa-check"></i> Sem anúncios</li>
+                            <li>
+                                <i class="fas fa-check"></i> Melhor valor do
+                                mercado
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!--Planos-->
+        <div id="services-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title">Planos</h3>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fa-regular fa-chess-queen"></i>
+                        <h4>Semanal</h4>
+                        <p>FAN</p>
+                        <h2>R$9,90</h2>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fa-regular fa-chess-queen"></i>
+                        <h4>Mensal</h4>
+                        <p>MEGA FAN</p>
+                        <h2>R$24,90</h2>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fa-solid fa-chess-queen"></i>
+                        <h4>Anual</h4>
+                        <p>ULTRA FAN</p>
+                        <h2>R$240,90</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!--Dados-->
+        <!-- Catálogo -->
+        <div id="catalog-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title">Nosso Catálogo</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img
+                                src="img/capa.jpg"
+                                class="card-img-top"
+                                alt="Imagem de Perfil 1"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Attack on Titan</h5>
+                                <p class="card-text">Anime</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img
+                                src="img/capa2.jpg"
+                                class="card-img-top"
+                                alt="Imagem de Perfil 2"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    The Seven Deadly Sins
+                                </h5>
+                                <p class="card-text">Anime</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img
+                                src="img/capa3.jpg"
+                                class="card-img-top"
+                                alt="Imagem de Perfil 3"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Sete Vidas</h5>
+                                <p class="card-text">Will Smith</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img
+                                src="img/capa4.jpg"
+                                class="card-img-top"
+                                alt="Imagem de Perfil 4"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Marley e Eu</h5>
+                                <p class="card-text">Owen Wilson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!--Scripts-->
-    <script src="scripts.js"></script>
-    <!--Bootstrap Javascript CDN-->
-    <script type="text/javascript"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</body>
-
+        <!--Scripts-->
+        <script src="scripts.js"></script>
+        <!--Bootstrap Javascript CDN-->
+        <script
+            type="text/javascript"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        ></script>
+    </body>
 </html>
