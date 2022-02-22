@@ -164,6 +164,29 @@
     color: red;
     margin-right: 15px;
 }
+.kiki-img {
+    transform: scaleX(-1) translateY(-50px);
+}
+.call-to-action{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -75px;
+    color: red;
+}
+.seta {
+    transform: translateY(-35px);
+    width: 40px;
+    
+    filter: invert(15%) sepia(97%) saturate(7186%) hue-rotate(357deg) brightness(94%) contrast(117%);
+    animation: bounce 1s alternate ease-in-out infinite;
+}
+
+@keyframes bounce {
+    to {
+        transform: translateY(-0px);
+    }
+}
 
 /* Planos */
 #services-area{
