@@ -41,7 +41,7 @@ $(navBtn).click(function() {
 $('.filter-btn').on('click', function() {
 
   let type = $(this).attr('id');
-  let boxes = $('.project-box');
+  let boxes = $('.catalog-box');
 
   $('.main-btn').removeClass('active');
   $(this).addClass('active');
