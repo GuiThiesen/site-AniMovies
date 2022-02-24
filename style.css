@@ -265,23 +265,10 @@
     background-color: #f9f9f9;
 }
 
-.card-img-top:hover + .card-body {
-    
-    background-color: #000000;
-    transition: .5s;
-    
-} 
-.card-body h5, p {
-    color: rgb(0, 0, 0);
+.card-body:hover {
+    background-color: #000;
+    color: #fff;
 }
-
-.card-img-top:hover + .card-body h5 {
-    color: #fff;    
-} 
-
-.card-img-top:hover + .card-body p {
-    color: #fff;    
-} 
 
 
 .card-body {
@@ -318,11 +305,41 @@
     border-radius: 5%;
 }
 
+
+
+/* Modal */
+
+.modal {
+    margin-top: 20vh;
+}
+
+#footer-modal {
+    margin-top: -23px;
+    height: 30px;
+}
+
+#modal-footer-btn {
+    background-color: #fff;
+    height: 20px;
+    font-size: 15px;
+}
+
+.modal-dialog {
+    width: 600px;
+}
+
+.modal-content {
+    background-color: #000;
+}
+.iframe {
+    text-align: center;
+}
 /* Footer */
 
 #footer-area {
     background-color: #000;
     height: 40px;
+    margin-left: -1px;
 }
 .copyright {
     color: white;
