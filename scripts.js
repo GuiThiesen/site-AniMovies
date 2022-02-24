@@ -73,7 +73,7 @@ $(document).ready(function() {
 
   // Modal
 
-  $(document).on('click', '.modal-btn', function() {
+    $('.modal-btn').on('click', function() {
 
       const iframeData = [
         'https://www.youtube.com/embed/P75q_3Qlrqg', 'https://www.youtube.com/embed/EL-D9LrFJd4', 'https://www.youtube.com/embed/fCQufN8Wsgc', 'https://www.youtube.com/embed/ShEAiFqkY0E', 'https://www.youtube.com/embed/kkP4h-gUWfo', 'https://www.youtube.com/embed/Mzi_V0m7Qsk',
@@ -85,57 +85,58 @@ $(document).ready(function() {
 
           let getTarget = $(this).attr("data-target");
 
-          document.querySelector(".modal").id = "anime1"
+          switch(getTarget) {
+            case '#anime1':
+                document.querySelector(".modal").id = "anime1"
+                document.querySelector(".iframe-tag").src = iframeData[0]
+              break;
+              case '#anime2':
+                document.querySelector(".modal").id = "anime2"
+                document.querySelector(".iframe-tag").src = iframeData[1]
+              break;
+              case '#anime3':
+                document.querySelector(".modal").id = "anime3"
+                document.querySelector(".iframe-tag").src = iframeData[2]
+              break;
+              case '#anime4':
+                document.querySelector(".modal").id = "anime4"
+                document.querySelector(".iframe-tag").src = iframeData[3]
+              break;
+              case '#anime5':
+                document.querySelector(".modal").id = "anime5"
+                document.querySelector(".iframe-tag").src = iframeData[4]
+              break;
+              case '#anime6':
+                document.querySelector(".modal").id = "anime6"
+                document.querySelector(".iframe-tag").src = iframeData[5]
+              break;
+              case '#movie1':
+                document.querySelector(".modal").id = "movie1"
+                document.querySelector(".iframe-tag").src = iframeData[6]
+              break;
+              case '#movie2':
+                document.querySelector(".modal").id = "movie2"
+                document.querySelector(".iframe-tag").src = iframeData[7]
+              break;
+              case '#movie3':
+                document.querySelector(".modal").id = "movie3"
+                document.querySelector(".iframe-tag").src = iframeData[8]
+              break;
+              case '#movie4':
+                document.querySelector(".modal").id = "movie4"
+                document.querySelector(".iframe-tag").src = iframeData[9]
+              break;
+              case '#movie5':
+                document.querySelector(".modal").id = "movie5"
+                document.querySelector(".iframe-tag").src = iframeData[10]
+              break;
+              case '#movie6':
+                document.querySelector(".modal").id = "movie6"
+                document.querySelector(".iframe-tag").src = iframeData[11]
+              break;
 
-          if (getTarget == '#anime1') {
-              document.querySelector(".modal").id = "anime1"
-              document.querySelector(".iframe-tag").src = iframeData[0]
-
-          } else if (getTarget == '#anime2') {
-              document.querySelector(".modal").id = "anime2"
-              document.querySelector(".iframe-tag").src = iframeData[1]
-
-          } else if (getTarget == '#anime3') {
-              document.querySelector(".modal").id = "anime3"
-              document.querySelector(".iframe-tag").src = iframeData[2]
-
-          } else if (getTarget == '#anime4') {
-              document.querySelector(".modal").id = "anime4"
-              document.querySelector(".iframe-tag").src = iframeData[3]
-
-          } else if (getTarget == '#anime5') {
-              document.querySelector(".modal").id = "anime5"
-              document.querySelector(".iframe-tag").src = iframeData[4]
-
-          } else if (getTarget == '#anime6') {
-              document.querySelector(".modal").id = "anime6"
-              document.querySelector(".iframe-tag").src = iframeData[5]
-
-          } else if (getTarget == '#movie1') {
-              document.querySelector(".modal").id = "movie1"
-              document.querySelector(".iframe-tag").src = iframeData[6]
-
-          } else if (getTarget == '#movie2') {
-              document.querySelector(".modal").id = "movie2"
-              document.querySelector(".iframe-tag").src = iframeData[7]
-
-          } else if (getTarget == '#movie3') {
-              document.querySelector(".modal").id = "movie3"
-              document.querySelector(".iframe-tag").src = iframeData[8]
-
-          } else if (getTarget == '#movie4') {
-              document.querySelector(".modal").id = "movie4"
-              document.querySelector(".iframe-tag").src = iframeData[9]
-
-          } else if (getTarget == '#movie5') {
-              document.querySelector(".modal").id = "movie5"
-              document.querySelector(".iframe-tag").src = iframeData[10]
-
-          } else if (getTarget == '#movie6') {
-              document.querySelector(".modal").id = "movie6"
-              document.querySelector(".iframe-tag").src = iframeData[11]
-
-          };
+            default: document.querySelector(".iframe-tag").src = ''
+          }
 
           
   });
@@ -143,7 +144,5 @@ $(document).ready(function() {
    $(".modal").on('hidden.bs.modal', function () {
     document.querySelector(".iframe-tag").src = '';
   });
+  
 });
-// pegar elemento no data-target (anime1, anime2)
-
-// mudar no modal o id dele e o link no iframe
