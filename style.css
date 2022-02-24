@@ -16,7 +16,8 @@
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
 .navbar .logo {
-    height: 60px;
+    height: 40px;
+    margin-top: -2px;
     padding-right: 15px;
     padding-left: 5px;
 }
@@ -171,11 +172,12 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 20px;
-    margin-top: -75px;
+    /* margin-top: -75px; */
     color: red;
+
 }
 .seta {
-    transform: translateY(-35px);
+    transform: translateY(-25px);
     width: 40px;
     
     filter: invert(15%) sepia(97%) saturate(7186%) hue-rotate(357deg) brightness(94%) contrast(117%);
@@ -351,6 +353,7 @@
     background-color: #000;
     height: 40px;
     margin-left: -1px;
+    padding: 0px;
 }
 .copyright {
     color: white;

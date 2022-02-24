@@ -73,23 +73,15 @@ $(document).ready(function() {
 
   // Modal
 
-  $('.modal-btn').on('click', function() {
+  $(document).on('click', '.modal-btn', function() {
 
-          const iframeData = {
-              'anime1': 'https://www.youtube.com/embed/P75q_3Qlrqg',
-              'anime2': 'https://www.youtube.com/embed/EL-D9LrFJd4',
-              'anime3': 'https://www.youtube.com/embed/fCQufN8Wsgc',
-              'anime4': 'https://www.youtube.com/embed/ShEAiFqkY0E',
-              'anime5': 'https://www.youtube.com/embed/kkP4h-gUWfo',
-              'anime6': 'https://www.youtube.com/embed/Mzi_V0m7Qsk',
-
-              'movie1': 'https://www.youtube.com/embed/zXkJW7ar0AE',
-              'movie2': 'https://www.youtube.com/embed/22NkKx6_MWw',
-              'movie3': 'https://www.youtube.com/embed/dr1bP4hIfnk',
-              'movie4': 'https://www.youtube.com/embed/lG7DGMgfOb8',
-              'movie5': 'https://www.youtube.com/embed/YoHD9XEInc0',
-              'movie6': 'https://www.youtube.com/embed/JMU_ksS3fq4'
-          }
+      const iframeData = [
+        'https://www.youtube.com/embed/P75q_3Qlrqg', 'https://www.youtube.com/embed/EL-D9LrFJd4', 'https://www.youtube.com/embed/fCQufN8Wsgc', 'https://www.youtube.com/embed/ShEAiFqkY0E', 'https://www.youtube.com/embed/kkP4h-gUWfo', 'https://www.youtube.com/embed/Mzi_V0m7Qsk',
+        'https://www.youtube.com/embed/zXkJW7ar0AE',  'https://www.youtube.com/embed/22NkKx6_MWw',  'https://www.youtube.com/embed/dr1bP4hIfnk',  'https://www.youtube.com/embed/lG7DGMgfOb8',  'https://www.youtube.com/embed/YoHD9XEInc0',  'https://www.youtube.com/embed/JMU_ksS3fq4'
+ 
+    ]
+             
+          
 
           let getTarget = $(this).attr("data-target");
 
@@ -97,53 +89,59 @@ $(document).ready(function() {
 
           if (getTarget == '#anime1') {
               document.querySelector(".modal").id = "anime1"
-              document.querySelector(".iframe-tag").src = iframeData.anime1
+              document.querySelector(".iframe-tag").src = iframeData[0]
 
           } else if (getTarget == '#anime2') {
               document.querySelector(".modal").id = "anime2"
-              document.querySelector(".iframe-tag").src = iframeData.anime2
+              document.querySelector(".iframe-tag").src = iframeData[1]
 
           } else if (getTarget == '#anime3') {
               document.querySelector(".modal").id = "anime3"
-              document.querySelector(".iframe-tag").src = iframeData.anime3
+              document.querySelector(".iframe-tag").src = iframeData[2]
 
           } else if (getTarget == '#anime4') {
               document.querySelector(".modal").id = "anime4"
-              document.querySelector(".iframe-tag").src = iframeData.anime4
+              document.querySelector(".iframe-tag").src = iframeData[3]
 
           } else if (getTarget == '#anime5') {
               document.querySelector(".modal").id = "anime5"
-              document.querySelector(".iframe-tag").src = iframeData.anime5
+              document.querySelector(".iframe-tag").src = iframeData[4]
 
           } else if (getTarget == '#anime6') {
               document.querySelector(".modal").id = "anime6"
-              document.querySelector(".iframe-tag").src = iframeData.anime6
+              document.querySelector(".iframe-tag").src = iframeData[5]
 
           } else if (getTarget == '#movie1') {
               document.querySelector(".modal").id = "movie1"
-              document.querySelector(".iframe-tag").src = iframeData.movie1
+              document.querySelector(".iframe-tag").src = iframeData[6]
 
           } else if (getTarget == '#movie2') {
               document.querySelector(".modal").id = "movie2"
-              document.querySelector(".iframe-tag").src = iframeData.movie2
+              document.querySelector(".iframe-tag").src = iframeData[7]
 
           } else if (getTarget == '#movie3') {
               document.querySelector(".modal").id = "movie3"
-              document.querySelector(".iframe-tag").src = iframeData.movie3
+              document.querySelector(".iframe-tag").src = iframeData[8]
 
           } else if (getTarget == '#movie4') {
               document.querySelector(".modal").id = "movie4"
-              document.querySelector(".iframe-tag").src = iframeData.movie4
+              document.querySelector(".iframe-tag").src = iframeData[9]
 
           } else if (getTarget == '#movie5') {
               document.querySelector(".modal").id = "movie5"
-              document.querySelector(".iframe-tag").src = iframeData.movie5
+              document.querySelector(".iframe-tag").src = iframeData[10]
 
           } else if (getTarget == '#movie6') {
               document.querySelector(".modal").id = "movie6"
-              document.querySelector(".iframe-tag").src = iframeData.movie6
+              document.querySelector(".iframe-tag").src = iframeData[11]
 
           };
+
+          
+  });
+
+   $(".modal").on('hidden.bs.modal', function () {
+    document.querySelector(".iframe-tag").src = '';
   });
 });
 // pegar elemento no data-target (anime1, anime2)
