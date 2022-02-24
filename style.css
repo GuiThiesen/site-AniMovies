@@ -105,7 +105,7 @@
     width: 100%;
     z-index: 1;
     text-align: center;
-    font-size: 5.5em;
+    font-size: 4em;
     font-weight: 750;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item p {
@@ -242,25 +242,6 @@
     color: red;
 }
 
-
-/* Dados 
-  
-  .circle-box div {
-    padding: 0 40px;
-  }
-  
-  .progressbar-text {
-    font-weight: bold;
-    font-size: 32px;
-  }
-  
-  #data-area p {
-    color: #FFF;
-    text-align: center;
-    font-size: 26px;
-    margin-top: 20px;
-  } */
-
 /* Catálogo */
 
 .catalog-area {
@@ -312,8 +293,8 @@
     border: none;
     padding: 10px 20px;
     font-size: 20px;
-    margin-right: 6px;
-    border-radius: 5%;
+    margin-right: 10px;
+    border-radius: 6%;
 }
 
 
