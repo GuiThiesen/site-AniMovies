@@ -31,7 +31,7 @@ $(document).ready(function() {
       }
 
       $([document.documentElement, document.body]).animate({
-          scrollTop: $(scrollTo).offset().top - 70
+          scrollTop: $(scrollTo).offset().top - 75
       }, 1500);
   });
 
@@ -76,12 +76,12 @@ $(document).ready(function() {
   $('.modal-btn').on('click', function() {
 
           const iframeData = {
-              'anime1': 'https://www.youtube.com/embed/6MRxT8kz30k',
-              'anime2': 'https://www.youtube.com/embed/OhNwckCLzis',
-              'anime3': 'https://www.youtube.com/embed/ChsLmEpdNrI',
-              'anime4': 'https://www.youtube.com/embed/--IcmZkvL0Q',
+              'anime1': 'https://www.youtube.com/embed/P75q_3Qlrqg',
+              'anime2': 'https://www.youtube.com/embed/EL-D9LrFJd4',
+              'anime3': 'https://www.youtube.com/embed/fCQufN8Wsgc',
+              'anime4': 'https://www.youtube.com/embed/ShEAiFqkY0E',
               'anime5': 'https://www.youtube.com/embed/kkP4h-gUWfo',
-              'anime6': 'https://www.youtube.com/embed/aMJpI_fEsA4',
+              'anime6': 'https://www.youtube.com/embed/Mzi_V0m7Qsk',
 
               'movie1': 'https://www.youtube.com/embed/zXkJW7ar0AE',
               'movie2': 'https://www.youtube.com/embed/22NkKx6_MWw',
