@@ -10,7 +10,7 @@
 .navbar {
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 999999;
     padding: 8px 0;
     background: rgba(0, 0, 0, 0.76);
     backdrop-filter: blur(15px);
@@ -29,14 +29,25 @@
     margin-right: 20%;
 }
 
-.navbar .nav .active,
-.navbar .nav :hover {
-    background: rgba(252, 0, 0, 0.5);
-    color: #000;
+#home-menu,
+#about-menu,
+#services-menu,
+#catalog-menu {
+    color: #fff;
+    padding-top: 10px;
+    transition: .5s;
+}
+
+#home-menu:hover,
+#about-menu:hover,
+#services-menu:hover,
+#catalog-menu:hover {
+    color: rgb(255, 0, 0, 0.85);
+    
 }
 
 .navbar-nav .nav a {
-    color: #fff; 
+    color: rgb(255, 0, 0); 
     font-size: 1em;
     font-weight: 500;
 } 
