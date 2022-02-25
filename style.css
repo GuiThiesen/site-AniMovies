@@ -62,7 +62,7 @@
 }
 
 #carouselExampleIndicators .carousel-inner {
-    position: relative;
+    /* position: relative; */
     height: 100vh;
     width: 100%;
     background: #000;
@@ -143,37 +143,37 @@
     font-weight: 750;
 }
 
-#carouselExampleIndicators .carousel-inner .carousel-item p {
+
+
+#carouselExampleIndicators .carousel-inner .carousel-item #fmab-title  {
     height: auto;
-    color: #ccc;
+    padding: 0 5vw;
+    color: rgb(255, 255, 255);
     width: 100%;
     z-index: 1;
     text-align: center;
-    font-size: 1.2em;
-    font-weight: 500;
+    font-size: 4em;
+    font-weight: 750;
 }
 
 .rating {
     color: rgb(255, 255, 255);
-    margin-top: 10px;
-    float: left;
+    transform: translateY();
+    font-size: 1.6em;
 }
 
-.rating-box {
+ .rating-box {
     padding: 0;
-}
+    margin: 2vh auto 0 auto;
+    transform: translateX(-1.5vw);
+} 
 
-.rating-area {
-    transform: translateX(-2vw);
-}
 
 .star {
-    float: right;
-    position: relative;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     margin-right: 0.5vw;
-    
+    transition: .3s;
     -webkit-animation:spin 10s linear infinite;
     -moz-animation:spin 10s linear infinite;
     animation:spin 10s linear infinite;
@@ -192,7 +192,7 @@
 }
 
 .star:hover{
-    opacity: .7;
+    opacity: .67;
 }
 
 .star-box {
@@ -447,9 +447,9 @@
     }
 
     .kiki-img {
-        height: 50vh;
-        margin: 50px 80px;
-    }
+        height: 70vh;
+        margin-top: 2vh;    
+    } 
 
 
     .modal-content {
@@ -466,10 +466,14 @@
         top: 25px;
     }
 
-    .kiki-img {
-        height: 50vh;
-        margin: 50px 80px;
+    .rating-area {
+        transform: translateX(-6vw);
     }
+
+     .kiki-img {
+        height: 70vh;
+        margin-top: 15vh;    
+    } 
 
     .catalog-box {
         transform: translateX(18px);
@@ -499,10 +503,14 @@
         top: 25px;
     }
 
-    .kiki-img {
-        height: 50vh;
-        
+    .rating-area {
+        transform: translateX(-6vw);
     }
+
+    .kiki-img {
+        height: 70vh;
+        margin-top: 15vh;    
+    } 
 
     .catalog-box {
         transform: translateX(56px);
@@ -518,18 +526,47 @@
 
 @media only screen and (max-width: 767px) {
 
+    .card-img-top:hover{
+        transform: scale(1.08);
+    }
+
     .logo {
         margin-left: 13%;
     }
+
+    /* #fmab-rating {
+        background-color: ;
+    }
+    
+    .rating {
+        color: rgb(255, 255, 255);
+        margin-left: 40vw;
+        margin-top: -6.5vh;
+        float: none;
+        position: relative;
+    }
+    .rating-area {
+        text-align: center;
+    } */
+    
+    
 
     .main-title::after {
         top: 25px;
     }
 
-    .kiki-img {
+     .kiki-img {
         display: none;
-        
-    }
+    } 
 
-   
+    /* .star {
+        float: none;
+        margin-left: 18.5vh;
+    } 
+
+    div .rating-area {
+        width: 500px;
+        margin: 0;
+        padding: 0;
+    } */
 }
