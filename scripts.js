@@ -39,9 +39,17 @@ $(document).ready(function() {
                 scrollTo = bannerSection
         }
         $([document.documentElement, document.body]).animate({
-            scrollTop: $(scrollTo).offset().top - 56
+            scrollTop: $(scrollTo).offset().top - 72
         }, 1500);
     });
+    
+    // Animação Scroll Seta
+
+    $(document).on('click', '.seta-scroll', function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $('#services-area').offset().top - 72
+        }, 1500);
+    })
 
     // Filtro do catálogo
 
