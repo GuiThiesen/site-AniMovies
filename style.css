@@ -35,7 +35,7 @@
 #catalog-menu {
     color: #fff;
     padding-top: 10px;
-    transition: .5s;
+    transition: .3s;
 }
 
 #home-menu:hover,
@@ -257,6 +257,9 @@
 
 .kiki-img {
     transform: scaleX(-1) translateY(-25px);
+    height: 500px;
+    width:  350px;
+    margin: auto auto;
 }
 
 .call-to-action {
@@ -365,7 +368,7 @@
 }
 
 .card-img-top:hover {
-    transform: scale(1.13);
+    transform: scale(1.04);
 }
 
 #filter-btn-box {
@@ -458,17 +461,12 @@
     }
 
     .kiki-img {
-        height: 70vh;
-        margin-top: 2vh;    
+        height: 500px;
+        width:350px;
     } 
-
-
     .modal-content {
         width: 600px;
     }
-
-
-
 }
 
 @media only screen and (min-width: 788px) and (max-width: 991px) {
@@ -482,8 +480,9 @@
     }
 
      .kiki-img {
-        height: 70vh;
-        margin-top: 15vh;    
+        height: 500px;
+        width:350px;
+        margin: auto auto;
     } 
 
     .catalog-box {
@@ -519,8 +518,9 @@
     }
 
     .kiki-img {
-        height: 70vh;
-        margin-top: 15vh;    
+        height: 500px;
+        width:350px;
+        margin: auto auto;   
     } 
 
     .catalog-box {
