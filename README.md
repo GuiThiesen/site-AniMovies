@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="img/readme/AniMovies.gif">
+<img src="img/readme/main.gif">
 </h1>
 
 # 📖 Sobre a AniMovies
